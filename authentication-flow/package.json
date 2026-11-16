@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "authorization-code": "nodemon --exec ts-node-esm ./authorization-code-flow/src/index.ts",
+    "implicit": "cd implicit-flow && npm run dev"
+  },
+  "workspaces": [
+    "implicit-flow"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "js-cookie": "^3.0.5"
+  },
+  "type": "module"
+}
